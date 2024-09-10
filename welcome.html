@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css"href="style1.css">
+</head>
+<body align="center">
+    <header>
+        <h1 id="openmessage">Welcome!</h1>
+        <h5>Put your Vote</h5>
+    </header>
+    <div class="votepool">
+        <div class="box">
+            <p>Put your Vote</p>
+        </div>
+        <div class="box">
+            <p>Put your Vote</p>
+    
+        </div>
+        <div class="box">
+            <p>Put your Vote</p>
+    
+        </div>
+        
+    </div>
+    <div class="endmessage">
+
+    </div>
+    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+        document.getElementById('welcomeMessage').textContent = `Welcome, ${username || 'User'}!`;
+    </script>
+    <div class="header">
+        
+    
+    
+    </div>
+</body>
+</html>
